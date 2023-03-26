@@ -80,7 +80,7 @@ body {
 
 .middle_image {
     height: calc(100vh - 100px);
-    background-image: url('C:/Users/luhar/Pictures/Opulent Grandeur/talents_middle_bg.jpg');
+    background-image: url('../Opulent Grandeur/talents_middle_bg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
