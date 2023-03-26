@@ -1,0 +1,167 @@
+.art-nav-round {
+    background-color: rgb(246, 236, 222);
+    margin: 0rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.art-styles {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.art-nav a {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.art-nav img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+} 
+
+.art-nav a img:hover{
+    opacity: 0.9;
+    border: 3px solid black;
+}
+
+.buylist {
+    background-color: rgb(254, 247, 238);
+}
+
+.o-title {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 3rem 0 1rem;
+}
+
+.o-grid-container {
+    display: grid;
+    grid-template-columns: 27% 27% 27%;
+    justify-content: space-around;
+}
+
+.o-grid-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.o-grid-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.o-grid-buy {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    transition: opacity 0.5s;
+}
+
+.o-grid-link {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+}
+
+.o-divfor-color {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.empty {
+    height: 400px;
+}
+
+.o-grid-buy:hover {
+    opacity: 1;
+}
+
+.o-name,
+.o-prize {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.o-prize {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.o-more {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.o-bton {
+    margin: 0px;
+    margin-right: 35px;
+    display: inline-block;
+    align-items: end;
+    background-color: transparent;
+    color: black !important;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    transition: background .3s;
+}
+
+.o-bton:hover {
+    background-color: white;
+
+}
+
+@media screen and (max-width: 950px) {
+    .o-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .o-grid-container-wrapper {
+        margin: 0 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .o-bton {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .o-grid-container-wrapper {
+        margin: 0 10%;
+    }
+    .o-bton {
+        margin: 0;
+    }
+}

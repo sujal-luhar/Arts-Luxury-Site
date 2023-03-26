@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.h-header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}  
+
+.h-logo {
+    display: inline;
+    width: fit-content;
+    margin: 0 20px;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-mobilelogo {
+    display: none;
+}
+
+.h-hero {
+    height: calc(100vh - 80px);
+    background-image: url('../Opulent Grandeur/Luxury_Banner_Unedit.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.h-hero_container{
+    padding: 0 50px;
+}
+
+.h-hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ababab;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.h-hero p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.h-bton {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff !important;
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  transition: background .3s;
+}
+
+.h-bton:hover {
+  background-color: #ababab;
+  color: white;
+  border-color: white;
+  
+}
+.h-navigation{
+    display: flex;
+    width: 60%;
+    background-color: white;
+    font-weight: 600;
+}
+
+.h-navigation a{
+    font-size: 14px;
+}
+
+.h-navigation a:hover, .alert a {
+    text-decoration: underline !important;
+}
+
+button{
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.h-toggle-button{
+    padding: 5px;
+    margin-bottom: 2px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.h-toggle-button .h-bar{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.h-nav-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.h-nav-li {
+    padding: 0 16px;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+
+@media screen and (max-width: 1125px) { 
+   .h-navigation{
+        display: none;
+        margin-top: 80px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .h-navigation .h-nav-ul{
+        flex-direction: column;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    .h-logo{
+        position: absolute;
+        left: 1rem;
+    }
+
+    .h-icons{
+        position: absolute;
+        right: 1rem;
+    }
+
+    .h-navigation .h-nav-li{
+        margin: 6px;
+    }
+
+    .h-toggle-button{
+        display: flex;
+    }
+
+    .h-navigation.active {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .h-mobilelogo {
+        display: inline-block;
+        
+    width: fit-content;
+    margin: 0 20px;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .h-logo {
+        display: none;
+    }
+
+    .h-navigation {
+        margin-top: 0rem;
+    }
+}
